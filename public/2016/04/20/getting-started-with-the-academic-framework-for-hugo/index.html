@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Getting started with the Academic framework for Hugo &middot; Icarus</title>
+    <meta name="generator" content="Hugo 0.21" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="John Doe">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="/2016/04/20/getting-started-with-the-academic-framework-for-hugo/"/>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/monokai.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="Getting started with the Academic framework for Hugo" />
+<meta property="og:description" content="The Academic framework enables you to easily create a beautifully simple personal or academic website using the Hugo static site generator.
+Key features:
+ Easily manage your homepage, blog posts, publications, talks, and projects Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact Need a different section? Just use the Custom widget! Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Easy to customize  Installation  Install Hugo and create a new website by typing the following commands in your Terminal or Command Prompt app:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2016/04/20/getting-started-with-the-academic-framework-for-hugo/" />
+
+
+
+<meta property="article:published_time" content="2016-04-20T12:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-04-20T12:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="Getting started with the Academic framework for Hugo">
+<meta itemprop="description" content="The Academic framework enables you to easily create a beautifully simple personal or academic website using the Hugo static site generator.
+Key features:
+ Easily manage your homepage, blog posts, publications, talks, and projects Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact Need a different section? Just use the Custom widget! Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Easy to customize  Installation  Install Hugo and create a new website by typing the following commands in your Terminal or Command Prompt app:">
+
+
+<meta itemprop="dateModified" content="2016-04-20T12:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1408">
+
+
+
+<meta itemprop="keywords" content="programming,r,academic,deep-learning,demo,golang,hugo,jekyll,markdown,plot,programming,r-markdown,regression,theme," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="Getting started with the Academic framework for Hugo"/>
+<meta name="twitter:title" content="Getting started with the Academic framework for Hugo"/>
+<meta name="twitter:description" content="The Academic framework enables you to easily create a beautifully simple personal or academic website using the Hugo static site generator.
+Key features:
+ Easily manage your homepage, blog posts, publications, talks, and projects Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact Need a different section? Just use the Custom widget! Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Easy to customize  Installation  Install Hugo and create a new website by typing the following commands in your Terminal or Command Prompt app:"/>
+<meta name="twitter:site" content="@spf13"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo">
+          
+          <i class="logo" style="background-image: url('/css/images/logo.png')"></i>
+          
+          <span class="site-title">Icarus</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+          <a class="main-nav-link" href="/2015/10/02/how-to-add-pages-to-the-menu/">How to add pages to the menu</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.png"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+          <td><a class="main-nav-link" href="/2015/10/02/how-to-add-pages-to-the-menu/">How to add pages to the menu</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="https://www.gravatar.com/avatar/4fca794da0cf08804f99048d3c8b39c1?s=100&d=identicon"/>
+      
+      <h2 id="name">John Doe</h2>
+      <h3 id="title">Blogger - Programmer - Gopher</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/digitalcraftsman">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        15
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          12
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/digitalcraftsman" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/spf13" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="/2016/04/20/getting-started-with-the-academic-framework-for-hugo/">
+    <h1 class="article-title" itemprop="name">
+        Getting started with the Academic framework for Hugo
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-04-20 12:00:00 &#43;0000 UTC" itemprop="datePublished">2016-04-20</time>
+            &middot;
+            1408
+            words
+            &middot;
+            7
+            minute read
+        </div>
+        
+        
+
+        
+            
+            
+            <div class="article-category">
+                <i class="fa fa-tags"></i>
+                
+                
+                <a class="article-category-link" href="/tags/academic">academic</a>
+                &middot;
+                
+                
+                <a class="article-category-link" href="/tags/hugo">hugo</a>
+                
+                
+            </div>
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<p>The Academic framework enables you to easily create a beautifully simple personal or academic website using the <a href="https://gohugo.io">Hugo</a> static site generator.</p>
+
+<p>Key features:</p>
+
+<ul>
+<li>Easily manage your homepage, blog posts, publications, talks, and projects</li>
+<li>Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact</li>
+<li>Need a different section? Just use the Custom widget!</li>
+<li>Write in <a href="/2016/04/20/writing-content-with-markdown-latex-and-shortcodes/">Markdown</a> for easy formatting and code highlighting, with <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX</a> for mathematical expressions</li>
+<li>Social/academic network linking, <a href="https://analytics.google.com">Google Analytics</a>, and <a href="https://disqus.com">Disqus</a> comments</li>
+<li>Responsive and mobile friendly</li>
+<li>Simple and refreshing one page design</li>
+<li>Easy to customize</li>
+</ul>
+
+<h2 id="installation">Installation</h2>
+
+<ol>
+<li><p><a href="https://georgecushen.com/create-your-website-with-hugo/#installing-hugo">Install Hugo</a> and create a new website by typing the following commands in your <em>Terminal</em> or <em>Command Prompt</em> app:</p>
+
+<pre><code>hugo new site my_website
+cd my_website
+</code></pre></li>
+
+<li><p>Install Academic with <a href="https://help.github.com/articles/set-up-git/">git</a>:</p>
+
+<pre><code>git clone https://github.com/gcushen/hugo-academic.git themes/academic
+</code></pre>
+
+<p>Or alternatively, <a href="https://github.com/gcushen/hugo-academic/archive/master.zip">download Academic</a> and extract it into a <code>themes/academic</code> folder within your Hugo website.</p></li>
+
+<li><p>If you are creating a new website, copy the contents of the <code>exampleSite</code> folder to your website root folder, overwriting existing files if necessary. The <code>exampleSite</code> folder contains an example config file and content to help you get started.</p>
+
+<pre><code>cp -av themes/academic/exampleSite/* .
+</code></pre></li>
+
+<li><p>Start the Hugo server from your website root folder:</p>
+
+<pre><code>hugo server --watch
+</code></pre>
+
+<p>Now you can go to <a href="http://localhost:1313">localhost:1313</a> and your new Academic powered website should appear.</p></li>
+
+<li><p>Customize your website - refer to the <em>Getting Started</em> section below</p></li>
+
+<li><p>Build your site by running the <code>hugo</code> command. Then <a href="https://georgecushen.com/create-your-website-with-hugo/">host it for free using Github Pages</a>. Or alternatively, copy the generated <code>public/</code> directory (by FTP, Rsync, etc.) to your production web server (such as your university&rsquo;s hosting service).</p></li>
+</ol>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<p>Assuming you created a new website with the example content following the installation steps above, this section explores just a few more steps in order to customize it.</p>
+
+<h3 id="core-parameters">Core parameters</h3>
+
+<p>The core parameters for the website can be edited in the <code>config.toml</code> configuration file:</p>
+
+<ul>
+<li>Set <code>baseurl</code> to your website URL (we recommend <a href="https://georgecushen.com/create-your-website-with-hugo/">GitHub Pages</a> for free hosting)</li>
+<li>Set <code>title</code> to your desired website title such as your name</li>
+<li>The example Disqus commenting variable should be cleared (e.g. <code>disqusShortname = &quot;&quot;</code>) or set to your own <a href="https://disqus.com/">Disqus</a> shortname to enable commenting</li>
+<li>Edit your details under <code>[params]</code>; these will be displayed mainly in the homepage <em>about</em> and <em>contact</em> widgets (if used). To disable a contact field, simply clear the value to <code>&quot;&quot;</code>.</li>
+<li>Place a square cropped portrait photo named <code>portrait.jpg</code> into the <code>static/img/</code> folder, overwriting any defaults. Alternatively, you can edit the <code>avatar</code> filepath to point to a different image name or clear the value to disable the avatar feature.</li>
+<li>To enable LaTeX math for your site, set <code>math = true</code></li>
+<li>Social/academic networking links are defined as multiples of <code>[[params.social]]</code>. They can be created or deleted as necessary.</li>
+</ul>
+
+<h3 id="introduce-yourself">Introduce yourself</h3>
+
+<p>Edit your biography in the <em>about</em> widget <code>content/home/about.md</code> that you copied across from the <code>themes/academic/exampleSite/</code> folder. The research interests and qualifications are stored as <code>interests</code> and <code>education</code> variables. The academic qualifications are defined as multiples of <code>[[education.courses]]</code> and can be created or deleted as necessary. It&rsquo;s possible to completely hide the interests and education lists by deleting their respective variables.</p>
+
+<h3 id="customize-the-homepage">Customize the homepage</h3>
+
+<p>Refer to our guide on using <a href="/2016/04/20/customizing-the-homepage-with-widgets/">widgets</a> to customize your homepage.</p>
+
+<h3 id="add-your-content">Add your content</h3>
+
+<p>Refer to our guide on <a href="/2016/04/20/managing-content/">managing content</a> to create your own publications, blog posts, talks, and projects.</p>
+
+<h3 id="remove-unused-widgets-and-pages">Remove unused widgets and pages</h3>
+
+<p><a href="/2016/04/20/managing-content/#removing-content">How to remove unused widgets and content pages</a>.</p>
+
+<h3 id="customization-upgrading">Customization &amp; Upgrading</h3>
+
+<p>Continue reading below for advanced customization tips and instructions for keeping the framework up-to-date with any improvements that become available.</p>
+
+<h2 id="advanced-customization">Advanced customization</h2>
+
+<p>It is possible to carry out many customizations without touching any files in <code>themes/academic</code>, making it easier to upgrade the framework in the future.</p>
+
+<h3 id="navigation-menu">Navigation menu</h3>
+
+<p>The <code>[[menu.main]]</code> entries towards the bottom of <code>config.toml</code> define the navigation links at the top of the website. They can be added or removed as desired.</p>
+
+<p>To create a dropdown sub-menu, add <code>identifier = &quot;something&quot;</code> to the parent item and <code>parent = &quot;something&quot;</code> to the child item.</p>
+
+<h3 id="website-icon">Website icon</h3>
+
+<p>Save your main icon and mobile icon as square PNG images named <code>icon.png</code> and <code>apple-touch-icon.png</code>, respectively. Place them in your root <code>static/img/</code> folder.</p>
+
+<h3 id="theme-color-css">Theme color (CSS)</h3>
+
+<p>You can link custom CSS assets (relative to your root <code>static/css</code>) from your <code>config.toml</code> using <code>custom_css = [&quot;custom.css&quot;]</code>.</p>
+
+<p>For example, lets make a green theme. First, define <code>custom_css = [&quot;green.css&quot;]</code> in <code>config.toml</code>. Then we can download the example <a href="https://gist.github.com/gcushen/d5525a4506b9ccf83f2bce592a895495">green theme</a> and save it as <code>static/css/green.css</code>, relative to your website root (i.e. <strong>not</strong> in the <code>themes</code> directory).</p>
+
+<h3 id="analytics">Analytics</h3>
+
+<p>To enable <a href="http://www.google.com/analytics">Google Analytics</a>, add your tracking code in <code>config.toml</code> similarly to <code>googleAnalytics = &quot;UA-12345678-9&quot;</code>.</p>
+
+<h3 id="third-party-and-local-scripts-js">Third party and local scripts (JS)</h3>
+
+<p>To add a third party script, create a file named <code>head_custom.html</code> in a <code>layouts/partials/</code> folder at the root of your website (not in the <code>themes</code> folder). Any HTML code added to this file will be included within your website&rsquo;s <code>&lt;head&gt;</code>. Therefore, it&rsquo;s suitable for adding custom metadata or third party scripts specified with the <em>async</em> attribute.</p>
+
+<p>Whereas for your own local scripts, you can link your local JS assets (relative to your root <code>static/js</code>) from your <code>config.toml</code> using <code>custom_js  = [&quot;custom.js&quot;]</code>.</p>
+
+<h3 id="language-and-translation">Language and translation</h3>
+
+<p>The interface text (e.g. buttons) is stored in language files which are collected from Academic&rsquo;s <code>themes/academic/i18n/</code> folder, as well as an <code>i18n/</code> folder at the root of your project.</p>
+
+<p>To edit the interface text, copy <code>themes/academic/i18n/en.yaml</code> to <code>i18n/en.yaml</code> (relative to the root of your website). Open the new file and make any desired changes to the text appearing after <code>translation:</code>. Note that the language files are formatted in YAML syntax.</p>
+
+<p>To translate the interface text to another language, follow the above instructions, but name the new file in the form <code>i18n/X.yaml</code> where <code>X</code> is the appropriate <a href="http://www.w3schools.com/tags/ref_language_codes.asp">ISO/RFC5646 language identifier</a> for the translation. Then follow the brief instructions in the <em>Language</em> section at the bottom of your <code>config.toml</code>. To change the default language used by Academic, set <code>defaultContentLanguage</code> to the desired language identifier in your configuration file.</p>
+
+<p>To translate the navigation bar, you can edit the default <code>[[menu.main]]</code> instances in <code>config.toml</code>. However, for a multilingual site, you will need to duplicate all of the <code>[[menu.main]]</code> instances and rename the new instances from <code>[[menu.main]]</code> to <code>[[languages.X.menu.main]]</code>, where <code>X</code> is the language identifier (e.g. <code>[[languages.zh.menu.main]]</code> for Simplified Chinese). Thus, the navigation bar can be displayed in multiple languages.</p>
+
+<p>To translate a content file in your <code>content/</code> folder into another language, copy the file to <code>filename.X.md</code> where <code>filename</code> is your existing filename and <code>X</code> is the appropriate <a href="http://www.w3schools.com/tags/ref_language_codes.asp">ISO/RFC5646 language identifier</a> for the translation. Then translate the content in the new file to the specified language.</p>
+
+<p>For further details on Hugo&rsquo;s internationalization and multilingual features, refer to the <a href="https://gohugo.io/content/multilingual/">associated Hugo documentation</a>.</p>
+
+<h3 id="permalinks">Permalinks</h3>
+
+<p><em>Permalinks</em>, or <em>permanent links</em>, are URLs to individual pages and posts on your website. They are permanent web addresses which can be used to link to your content. Using Hugo&rsquo;s <em>permalinks</em> option these can be easily customized. For example, the blog post URL can be changed to the form <em>yourURL/2016/05/01/my-post-slug</em> by adding the following near the top of your <code>config.toml</code> (before <code>[params]</code> settings):</p>
+
+<pre><code>[permalinks]
+    post = &quot;/:year/:month/:day/:slug&quot;
+</code></pre>
+
+<p>Where <code>:slug</code> defaults to the filename of the post, excluding the file extension. However, slug may be overridden on a per post basis if desired, simply by setting <code>slug = &quot;my-short-post-title&quot;</code> in your post preamble.</p>
+
+<h2 id="upgrading">Upgrading</h2>
+
+<p>Feel free to <em>star</em> the project on <a href="https://github.com/gcushen/hugo-academic/">Github</a> and monitor the <a href="https://github.com/gcushen/hugo-academic/commits/master">commits</a> for updates.</p>
+
+<p>Before upgrading the framework, it is recommended to make a backup of your entire website directory, or at least your <code>themes/academic</code> directory. You can also read about the <a href="https://github.com/gcushen/hugo-academic/releases">most recent milestones</a> (but this doesn&rsquo;t necessarily reflect the latest <em>master</em> release).</p>
+
+<p>Before upgrading for the first time, the remote <em>origin</em> repository should be renamed to <em>upstream</em>:</p>
+
+<pre><code>$ cd themes/academic
+$ git remote rename origin upstream
+</code></pre>
+
+<p>To list available updates:</p>
+
+<pre><code>$ cd themes/academic
+$ git fetch upstream
+$ git log --pretty=oneline --abbrev-commit --decorate HEAD..upstream/master
+</code></pre>
+
+<p>Then, upgrade by running:</p>
+
+<pre><code>$ git pull upstream
+</code></pre>
+
+<p>If you have modified files in <code>themes/academic</code>, git will attempt to auto-merge changes. If conflicts are reported, you will need to manually edit the files with conflicts and add them back (<code>git add &lt;filename&gt;</code>).</p>
+
+<p>If there are any issues after upgrading, you may wish to compare your site with the latest <a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite">example site</a> to check if any settings changed.</p>
+
+<h2 id="feedback-contributing">Feedback &amp; Contributing</h2>
+
+<p>Please use the <a href="https://github.com/gcushen/hugo-academic/issues">issue tracker</a> to let me know about any bugs or feature requests, or alternatively make a pull request.</p>
+
+<p>For general questions about Hugo, there is a <a href="http://discuss.gohugo.io">Hugo discussion forum</a>.</p>
+
+<h2 id="license">License</h2>
+
+<p>Copyright 2016 <a href="https://georgecushen.com">George Cushen</a>.</p>
+
+<p>Released under the <a href="https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md">MIT</a> license.</p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="/2016/04/20/getting-started-with-the-academic-framework-for-hugo/" data-id="2b83d1447225eb0f24aea62df635df0e" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="/2016/04/20/customizing-the-homepage-with-widgets/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">Customizing the homepage with widgets</div>
+    </a>
+    
+
+    
+    <a href="/2016/12/30/a-plain-markdown-post/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">A Plain Markdown Post</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/06/03/a-better-title/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="/2017/06/03/a-better-title/" class="title">A better title</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-03 19:40:57 -0700 PDT" itemprop="datePublished">2017-06-03</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/05/20/markdown-cheat-sheet/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/05/20/markdown-cheat-sheet/" class="title">Markdown Cheat Sheet</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 12:10:51 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/05/20/using-the-gallery-shortcode/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/05/20/using-the-gallery-shortcode/" class="title">Using the gallery shortcode</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 12:00:23 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/05/20/formulas-with-mathjax/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/05/20/formulas-with-mathjax/" class="title">Formulas with MathJax</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 11:58:06 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2016/12/30/a-plain-markdown-post/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    <p class="item-title"><a href="/2016/12/30/a-plain-markdown-post/" class="title">A Plain Markdown Post</a></p>
+                    <p class="item-date">
+                        <time datetime="2016-12-30 21:49:57 -0700 -0700" itemprop="datePublished">2016-12-30</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/categories/programming">
+                    programming
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/categories/r">
+                    r
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/academic">
+                    academic
+                </a>
+                <span class="category-list-count">3</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/deep-learning">
+                    deep-learning
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/demo">
+                    demo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/golang">
+                    golang
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">4</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/jekyll">
+                    jekyll
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/markdown">
+                    markdown
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/plot">
+                    plot
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/programming">
+                    programming
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/r-markdown">
+                    r-markdown
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/regression">
+                    regression
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/theme">
+                    theme
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="/tags/academic" style="font-size: 12px;">academic</a>
+        
+        
+        <a href="/tags/deep-learning" style="font-size: 12px;">deep-learning</a>
+        
+        
+        <a href="/tags/demo" style="font-size: 12px;">demo</a>
+        
+        
+        <a href="/tags/golang" style="font-size: 12px;">golang</a>
+        
+        
+        <a href="/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="/tags/jekyll" style="font-size: 12px;">jekyll</a>
+        
+        
+        <a href="/tags/markdown" style="font-size: 12px;">markdown</a>
+        
+        
+        <a href="/tags/plot" style="font-size: 12px;">plot</a>
+        
+        
+        <a href="/tags/programming" style="font-size: 12px;">programming</a>
+        
+        
+        <a href="/tags/r-markdown" style="font-size: 12px;">r-markdown</a>
+        
+        
+        <a href="/tags/regression" style="font-size: 12px;">regression</a>
+        
+        
+        <a href="/tags/theme" style="font-size: 12px;">theme</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
