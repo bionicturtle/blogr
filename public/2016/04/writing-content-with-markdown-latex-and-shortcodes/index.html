@@ -1,0 +1,1050 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.21">
+    <meta name="theme" content="Tranquilpeak 0.3.1-BETA">
+    <title>Writing content with Markdown, LaTeX, and Shortcodes</title>
+    <meta name="author" content="Firstname Lastname">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="/favicon.png">
+    
+
+    
+    <meta name="description" content="Content can be written using Markdown, LaTeX math, and Hugo Shortcodes. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.">
+    <meta property="og:description" content="Content can be written using Markdown, LaTeX math, and Hugo Shortcodes. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Writing content with Markdown, LaTeX, and Shortcodes">
+    <meta property="og:url" content="/2016/04/writing-content-with-markdown-latex-and-shortcodes/">
+    <meta property="og:site_name" content="Hugo tranquilpeak theme">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hugo tranquilpeak theme">
+    <meta name="twitter:description" content="Content can be written using Markdown, LaTeX math, and Hugo Shortcodes. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=640">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">Hugo tranquilpeak theme</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Firstname Lastname</h4>
+        
+          <h5 class="sidebar-profile-bio">Super bio with markdown support <strong>COOL</strong></h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/users/636472/kakawait">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/kakawait">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Writing content with Markdown, LaTeX, and Shortcodes
+    </h1>
+  
+  <div class="postShorten-meta post-meta">
+  
+    <time itemprop="datePublished" datetime="2016-04-20T10:00:00Z">
+      
+  April 20, 2016
+
+    </time>
+  
+  
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Content can be written using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>, <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math</a>, and <a href="http://gohugo.io/extras/shortcodes/">Hugo Shortcodes</a>. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.</p>
+
+<h2 id="sub-headings">Sub-headings</h2>
+
+<pre><code>## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6
+</code></pre>
+
+<h2 id="emphasis">Emphasis</h2>
+
+<pre><code>Italics with *asterisks* or _underscores_.
+
+Bold with **asterisks** or __underscores__.
+
+Combined emphasis with **asterisks and _underscores_**.
+
+Strikethrough with ~~two tildes~~.
+</code></pre>
+
+<h2 id="ordered-lists">Ordered lists</h2>
+
+<pre><code>1. First item
+2. Another item
+</code></pre>
+
+<h2 id="unordered-lists">Unordered lists</h2>
+
+<pre><code>* First item
+* Another item
+</code></pre>
+
+<h2 id="images">Images</h2>
+
+<p>Images may be added to a page by placing them in your <code>static/img/</code> folder and referencing them using one of the following two notations:</p>
+
+<p>A general image:</p>
+
+<pre><code>![alternative text for search engines](/img/screenshot.png)
+</code></pre>
+
+<p>A numbered figure with caption:</p>
+
+<pre><code>{{&lt; figure src=&quot;/img/screenshot.png&quot; title=&quot;Figure Caption&quot; &gt;}}
+</code></pre>
+
+<h2 id="links">Links</h2>
+
+<pre><code>[I'm a link](https://www.google.com)
+[A post]({{&lt; ref &quot;post/hi.md&quot; &gt;}})
+[A publication]({{&lt; ref &quot;publication/hi.md&quot; &gt;}})
+[A project]({{&lt; ref &quot;project/hi.md&quot; &gt;}})
+[Another section]({{&lt; relref &quot;hi.md#who&quot; &gt;}})
+</code></pre>
+
+<h2 id="emojis">Emojis</h2>
+
+<p>See the <a href="http://www.webpagefx.com/tools/emoji-cheat-sheet/">Emoji cheat sheet</a> for available emoticons. The following serves as an example, but you should remove the spaces between each emoji name and pair of semicolons:</p>
+
+<pre><code>I : heart : Academic : smile :
+</code></pre>
+
+<p>I :heart: Academic :smile:</p>
+
+<h2 id="blockquote">Blockquote</h2>
+
+<pre><code>&gt; This is a blockquote.
+</code></pre>
+
+<blockquote>
+<p>This is a blockquote.</p>
+</blockquote>
+
+<h2 id="footnotes">Footnotes</h2>
+
+<pre><code>I have more [^1] to say.
+
+[^1]: Footnote example.
+</code></pre>
+
+<p>I have more <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup> to say.</p>
+
+<h2 id="code-highlighting">Code highlighting</h2>
+
+<p>Pass the <em>language</em> of the code, such as <code>python</code>, as a parameter after three backticks:</p>
+
+<pre><code>```python
+# Example of code highlighting
+input_string_var = input(&quot;Enter some data: &quot;)
+print(&quot;You entered: {}&quot;.format(input_string_var))
+```
+</code></pre>
+
+<p>Result:</p>
+
+<pre><code class="language-python"># Example of code highlighting
+input_string_var = input(&quot;Enter some data: &quot;)
+print(&quot;You entered: {}&quot;.format(input_string_var))
+</code></pre>
+
+<h3 id="highlighting-options">Highlighting options</h3>
+
+<p>The Academic theme uses <a href="https://highlightjs.org">highlight.js</a> for source code highlighting, and highlighting is enabled by default for all pages. However, several configuration options are supported that allow finer-grained control over highlight.js.</p>
+
+<p>The following table lists the supported options for configuring highlight.js, along with their expected type and a short description. A &ldquo;yes&rdquo; in the <strong>config.toml</strong> column means the value can be set globally in <code>config.toml</code>, and a &ldquo;yes&rdquo; in the <strong>preamble</strong> column means that the value can be set locally in a particular page&rsquo;s preamble.</p>
+
+<table>
+<thead>
+<tr>
+<th>option</th>
+<th>type</th>
+<th>description</th>
+<th>config.toml</th>
+<th>preamble</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>highlight</code></td>
+<td>boolean</td>
+<td>enable/disable highlighting</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td><code>highlight_languages</code></td>
+<td>slice</td>
+<td>choose additional languages</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td><code>highlight_style</code></td>
+<td>string</td>
+<td>choose a highlighting style</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+
+<tr>
+<td><code>highlight_version</code></td>
+<td>string</td>
+<td>choose the highlight.js version</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="option-highlight">Option <code>highlight</code></h4>
+
+<p>The <code>highlight</code> option allows enabling or disabling the inclusion of highlight.js, either globally or for a particular page. If the option is unset, it has the same effect as if you had specified <code>highlight = true</code>. That is, the highlight.js javascript and css files will be included in every page. If you&rsquo;d like to only include highlight.js files on pages that actually require source code highlighting, you can set <code>highlight = false</code> in <code>config.toml</code>, and then override it by setting <code>highlight = true</code> in the preamble of any pages that require source code highlighting. Conversely, you could enable highlighting globally, and disable it locally for pages that do not require it. Here is a table that shows whether highlighting will be enabled for a page, based on the values of <code>highlight</code> set in <code>config.toml</code> and/or the page&rsquo;s preamble.</p>
+
+<table>
+<thead>
+<tr>
+<th>config.toml</th>
+<th>page preamble</th>
+<th>highlighting enabled for page?</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>unset or true</td>
+<td>unset or true</td>
+<td>yes</td>
+</tr>
+
+<tr>
+<td>unset or true</td>
+<td>false</td>
+<td>no</td>
+</tr>
+
+<tr>
+<td>false</td>
+<td>unset or false</td>
+<td>no</td>
+</tr>
+
+<tr>
+<td>false</td>
+<td>true</td>
+<td>yes</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="option-highlight-languages">Option <code>highlight_languages</code></h4>
+
+<p>The <code>highlight_languages</code> option allows you to specify additional languages that are supported by highlight.js, but are not considered &ldquo;common&rdquo; and therefore are not supported by default. For example, if you want source code highlighting for Go and clojure in all pages, set <code>highlight_languages = [&quot;go&quot;, &quot;clojure&quot;]</code> in <code>config.toml</code>. If, on the other hand, you want to enable a language only for a specific page, you can set <code>highlight_languages</code> in that page&rsquo;s preamble.</p>
+
+<p>The <code>highlight_languages</code> options specified in <code>config.toml</code> and in a page&rsquo;s preamble are additive. That is, if <code>config.toml</code> contains, <code>highlight_languages = [&quot;go&quot;]</code> and the page&rsquo;s preamble contains <code>highlight_languages = [&quot;ocaml&quot;]</code>, then javascript files for <em>both</em> go and ocaml will be included for that page.</p>
+
+<p>If the <code>highlight_languages</code> option is set, then the corresponding javascript files will be served from the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs server</a>. To see a list of available languages, visit the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs page</a> and search for links with the word &ldquo;languages&rdquo;.</p>
+
+<p>The <code>highlight_languages</code> option provides an easy and convenient way to include support for additional languages to be severed from a CDN. If serving unmodified files from cdnjs doesn&rsquo;t meet your needs, you can include javascript files for additional language support via one of the methods described in the <a href="/2016/04/getting-started-with-the-academic-framework-for-hugo/#third-party-and-local-scripts-js">getting started guide</a>.</p>
+
+<h4 id="option-highlight-style">Option <code>highlight_style</code></h4>
+
+<p>The <code>highlight_style</code> option allows you to select an alternate css style for highlighted code. For example, if you wanted to use the solarized-dark style, you could set <code>highlight_style = &quot;solarized-dark&quot;</code> in <code>config.toml</code>.</p>
+
+<p>If the <code>highlight_style</code> option is unset, the default is to use the file <code>/css/highlight.min.css</code>, either the one provided by the Academic theme, or else the one in your local <code>static</code> directory.  The <code>/css/highlight.min.css</code> file provided by Academic is equivalent to the <code>github</code> style from highlight.js.</p>
+
+<p>If the <code>highlight_style</code> option <em>is</em> set, then <code>/css/highlight.min.css</code> is ignored, and the corresponding css file will be served from the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs server</a>. To see a list of available styles, visit the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs page</a> and search for links with the word &ldquo;styles&rdquo;.</p>
+
+<p>See the <a href="https://highlightjs.org/static/demo/">highlight.js demo page</a> for examples of available styles.</p>
+
+<div class="alert note ">
+  <p>Not all styles listed on the <a href="https://highlightjs.org/static/demo/">highlight.js demo page</a> are available from the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs server</a>. If you want to use a style that is not served by cdnjs, just leave <code>highlight_style</code> unset, and place the corresponding css file in <code>/static/css/highlight.min.css</code>.</p>
+</div>
+
+<div class="alert note ">
+  <p>If you don&rsquo;t want to change the default style that ships with Academic but you do want the style file served from the <a href="https://cdnjs.com/libraries/highlight.js/">cdnjs server</a>, set <code>highlight_style = &quot;github&quot;</code> in <code>config.toml</code>.</p>
+</div>
+
+<p>The <code>highlight_style</code> option is only recognized when set in <code>config.toml</code>. Setting <code>highlight_style</code> in your page&rsquo;s preamble has no effect.</p>
+
+<h4 id="option-highlight-version">Option <code>highlight_version</code></h4>
+
+<p>The <code>highlight_version</code> option, as the name implies, allows you to select the version of highlight.js you want to use. The default value is &ldquo;9.9.0&rdquo;. The <code>highlight_version</code> option is only recognized when set in <code>config.toml</code>. Setting <code>highlight_version</code> in your page&rsquo;s preamble has no effect.</p>
+
+<h2 id="twitter-tweet">Twitter tweet</h2>
+
+<p>To include a single tweet, pass the tweet’s ID from the tweet&rsquo;s URL as parameter to the shortcode:</p>
+
+<pre><code>{{&lt; tweet 666616452582129664 &gt;}}
+</code></pre>
+
+<h2 id="youtube">Youtube</h2>
+
+<pre><code>{{&lt; youtube w7Ft2ymGmfc &gt;}}
+</code></pre>
+
+<h2 id="vimeo">Vimeo</h2>
+
+<pre><code>{{&lt; vimeo 146022717 &gt;}}
+</code></pre>
+
+<h2 id="github-gist">GitHub gist</h2>
+
+<pre><code>{{&lt; gist USERNAME GIST-ID  &gt;}}
+</code></pre>
+
+<h2 id="speaker-deck">Speaker Deck</h2>
+
+<pre><code>{{&lt; speakerdeck 4e8126e72d853c0060001f97 &gt;}}
+</code></pre>
+
+<h2 id="rm-latex-math">$\rm \LaTeX$ math</h2>
+
+<pre><code class="language-TeX">$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$
+</code></pre>
+
+<p>$$\left [ – \frac{\hbar^2}{2 m} \frac{\partial^2}{\partial x^2} + V \right ] \Psi = i \hbar \frac{\partial}{\partial t} \Psi$$</p>
+
+<p>Alternatively, inline math can be written by wrapping the formula with only a single <code>$</code>:</p>
+
+<pre><code>This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$
+</code></pre>
+
+<p>This is inline: $\mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon$</p>
+
+<h2 id="table">Table</h2>
+
+<p>Code:</p>
+
+<pre><code class="language-Markdown">| Command           | Description                    |
+| ------------------| ------------------------------ |
+| `hugo`            | Build your website.            |
+| `hugo serve -w`   | View your website.             |
+</code></pre>
+
+<p>Result:</p>
+
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>hugo</code></td>
+<td>Build your website.</td>
+</tr>
+
+<tr>
+<td><code>hugo serve -w</code></td>
+<td>View your website.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="alerts">Alerts</h2>
+
+<p>Alerts are a useful feature that add side content such as tips, notes, or warnings to your articles. They are especially handy when writing educational tutorial-style articles. Use the corresponding shortcodes to enable alerts inside your content:</p>
+
+<pre><code>{{% alert note %}}
+Here's a tip or note...
+{{% /alert %}}
+</code></pre>
+
+<p>This will display the following <em>note</em> block:</p>
+
+<div class="alert note ">
+  <p>Here&rsquo;s a tip or note&hellip;</p>
+</div>
+
+<pre><code>{{% alert warning %}}
+Here's some important information...
+{{% /alert %}}
+</code></pre>
+
+<p>This will display the following <em>warning</em> block:</p>
+
+<div class="alert warning ">
+  <p>Here&rsquo;s some important information&hellip;</p>
+</div>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">Footnote example.
+ <a class="footnote-return" href="#fnref:1"><sup>[return]</sup></a></li>
+</ol>
+</div>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/managing-content/" data-tooltip="Managing content">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2017 Firstname Lastname. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2016/04/managing-content/" data-tooltip="Managing content">
+          
+            <i class="fa fa-angle-left"></i>
+            <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+          </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
+          
+            <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    
+      <li class="post-action hide-lg hide-md hide-sm">
+        <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+          <i class="fa fa-share-alt"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-google-plus"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-facebook-official"></i>
+        </a>
+      </li>
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </li>
+    
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2f2016%2f04%2fwriting-content-with-markdown-latex-and-shortcodes%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Firstname Lastname</h4>
+    
+      <div id="about-card-bio">Super bio with markdown support <strong>COOL</strong></div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Your job title
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        France
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2017/06/a-better-title/">
+                <h3 class="media-heading">A better title</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jun 6, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">San FranciscoHow is this? does it work?
+</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/post/">
+                <h3 class="media-heading">Posts</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2016/12/a-plain-markdown-post/">
+                <h3 class="media-heading">A Plain Markdown Post</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
+ You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&rsquo;s Markdown and Pandoc&rsquo;s Markdown.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2016/04/getting-started-with-the-academic-framework-for-hugo/">
+                <h3 class="media-heading">Getting started with the Academic framework for Hugo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">The Academic framework enables you to easily create a beautifully simple personal or academic website using the Hugo static site generator.
+Key features:
+ Easily manage your homepage, blog posts, publications, talks, and projects Configurable widgets available for Biography, Publications, Projects, News/Blog, Talks, and Contact Need a different section? Just use the Custom widget! Write in Markdown for easy formatting and code highlighting, with LaTeX for mathematical expressions Social/academic network linking, Google Analytics, and Disqus comments Responsive and mobile friendly Simple and refreshing one page design Easy to customize  Installation  Install Hugo and create a new website by typing the following commands in your Terminal or Command Prompt app:</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2016/04/customizing-the-homepage-with-widgets/">
+                <h3 class="media-heading">Customizing the homepage with widgets</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Homepage widgets display as sections on the homepage. They can be enabled/disabled and configured as desired. Academic has the following widgets available to use:
+ About/biography Selected publications Recent publications Recent news/blog posts Projects Selected talks Recent talks Contact Custom widget (demonstrated with the teaching example)  The example site that you copied to create your site uses all the different types of widget (except talks), so you can generally just delete the widgets you don&rsquo;t need and customize the parameters of the widgets you wish to keep.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2016/04/managing-content/">
+                <h3 class="media-heading">Managing content</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about <a href="/2016/04/writing-content-with-markdown-latex-and-shortcodes/">writing content with Markdown, LaTeX, and Shortcodes</a>.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2016/04/writing-content-with-markdown-latex-and-shortcodes/">
+                <h3 class="media-heading">Writing content with Markdown, LaTeX, and Shortcodes</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Apr 4, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Content can be written using <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>, <a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics">LaTeX math</a>, and <a href="http://gohugo.io/extras/shortcodes/">Hugo Shortcodes</a>. Additionally, HTML may be used for advanced formatting. This article gives an overview of the most common formatting options.</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2015/07/hello-r-markdown/">
+                <h3 class="media-heading">Hello R Markdown</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2015
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2015/01/lorem-ipsum/">
+                <h3 class="media-heading">Lorem Ipsum</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jan 1, 2015
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2014/03/migrate-from-jekyll-to-hugo/">
+                <h3 class="media-heading">Migrate from Jekyll to Hugo</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Mar 3, 2014
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">Here are a few tips for migrating an existing website from Jekyll to Hugo. These tips can be applied in conjunction with following Hugo Academic&rsquo;s getting started guide.
+Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         12 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('/images/cover5.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2016\/04\/writing-content-with-markdown-latex-and-shortcodes\/';
+          
+            this.page.identifier = '\/2016\/04\/writing-content-with-markdown-latex-and-shortcodes\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'hugo-tranquilpeak-theme';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+
+    
+  </body>
+</html>
+

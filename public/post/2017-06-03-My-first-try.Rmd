@@ -1,0 +1,10 @@
+---
+date: 2017-06-03T19:40:57-07:00
+subtitle: ""
+tags: []
+title: A better title
+---
+
+# San Francisco 
+
+How is this? does it work?
