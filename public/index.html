@@ -180,7 +180,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        6
+        7
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -317,6 +317,130 @@
         </div>
         <footer class="article-footer">
     <a data-url="/2017/06/07/davids-wed2/" data-id="76661e701aa636216f54e4094c212845" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="/2017/06/08/post-thursdays-thought/">
+    <h1 class="article-title" itemprop="name">
+        post/thursdays-thought
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+            &middot;
+            152
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                The Green Lantern … check it out folk
+x &lt;- rnorm(100)x## [1] -0.879113238 -0.766520440 0.760927108 -0.006634459 0.274945050## [6] 0.214219656 0.310106728 2.123154378 -0.001895431 -0.916503674## [11] -0.735201293 -1.600476860 -0.024285897 -1.306061269 -0.225074740## [16] 0.229241673 0.385354633 -0.234740214 0.308340078 -0.037666683## [21] 1.165835466 -1.445619826 -1.274022269 1.533542892 0.874348842## [26] -0.894364860 -1.058963031 0.173977164 -0.042524487 -0.063435175## [31] 0.174310773 -0.752551687 0.101915102 -1.313591124 -0.346244697## [36] 1.079353903 0.409439542 0.129432279 0.755227479 0.783517920## [41] 1.
+            </p>
+            <p class="article-more-link">
+                <a href="/2017/06/08/post-thursdays-thought/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="/2017/06/08/post-thursdays-thought/" data-id="c667acd042b33f916456ed2cd5aff78d" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -1096,6 +1220,25 @@ When you save the notebook, an HTML file containing the code and output will be 
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="/2017/06/08/post-thursdays-thought/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/06/08/post-thursdays-thought/" class="title">post/thursdays-thought</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="/2017/05/20/markdown-cheat-sheet/" class="thumbnail">
                     
                         <span style="background-image:url(/banners/0521-correlations.jpeg)" alt="Icarus" class="thumbnail-image"></span>
@@ -1147,32 +1290,6 @@ When you save the notebook, an HTML file containing the code and output will be 
                     <p class="item-title"><a href="/2017/05/20/formulas-with-mathjax/" class="title">Formulas with MathJax</a></p>
                     <p class="item-date">
                         <time datetime="2017-05-20 11:58:06 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="/2015/10/02/how-to-add-pages-to-the-menu/" class="thumbnail">
-                    
-                        <span style="background-image:url(/banners/placeholder.png)" alt="Icarus" class="thumbnail-image"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    <p class="item-category">
-                        
-                        <a class="article-category-link" href="/categories/programming">
-                        programming
-                        </a>
-                    </p>
-                    
-                    
-                    <p class="item-title"><a href="/2015/10/02/how-to-add-pages-to-the-menu/" class="title">How to add pages to the menu</a></p>
-                    <p class="item-date">
-                        <time datetime="2015-10-02 21:49:20 &#43;0200 &#43;0200" itemprop="datePublished">2015-10-02</time>
                     </p>
                 </div>
             </li>

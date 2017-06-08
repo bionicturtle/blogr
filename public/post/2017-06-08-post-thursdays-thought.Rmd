@@ -1,0 +1,22 @@
+---
+title: post/thursdays-thought
+author: ~
+date: '2017-06-08'
+slug: post-thursdays-thought
+categories: []
+tags: []
+banner: ''
+description: ''
+images: []
+menu: ''
+---
+
+The Green Lantern ... check it out folk
+
+```{r}
+x <- rnorm(100)
+x
+```
+
+
+<!--more-->

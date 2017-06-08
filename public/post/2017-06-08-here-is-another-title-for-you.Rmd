@@ -1,0 +1,14 @@
+ser---
+title: Here is another title for you
+author: ~
+date: '2017-06-08'
+slug: here-is-another-title-for-you
+categories: []
+tags: []
+banner: ''
+description: ''
+images: []
+menu: ''
+---
+
+<!--more-->
