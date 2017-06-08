@@ -19,8 +19,8 @@ theme = "hugo-icarus-theme"
 
 [params]
     # Tell me who you are
-    author = "John Doe"
-    bio = "Blogger - Programmer - Gopher"
+    author = "David Harper"
+    bio = "Expert Finance at bionicturtle.com - Data Science"
     location = "Earth"
     site_description = ""
     copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
