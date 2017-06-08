@@ -67,8 +67,7 @@ I am a teaching instructor for the following courses at University X:
       
       <guid>/2017/06/07/davids-wed2/</guid>
       <description>This is my new note today
-Hello WorldThe leftovers finale was amazeballs
-</description>
+Hello Worldn = 1000x &amp;lt;-rnorm(n,mean=0,sd=1)plot(x,main=&amp;#39;random draws from \n a standard normal&amp;#39;) ## Here are all the randomly sampled points hist(x,probability=TRUE) ## A histogram of the samplescurve(dnorm(x,mean=0,sd=1),add=TRUE) ## Overlay the pdf to convince ourselves that the points were  ## infact drawn from that distribution.# Betax&amp;lt;-rbeta(n,7,2)plot(x,main=&amp;#39;random draws \n from a beta distribution&amp;#39;)hist(x,probability=TRUE)curve(dbeta(x,7,2),add=TRUE)# Log-Normalx&amp;lt;-rlnorm(n,0,1)plot(x,main=&amp;#39;random draws \n from a log-Normal distribution&amp;#39;)hist(x,probability=TRUE)curve(dlnorm(x,0,1),add=TRUE)The leftovers finale was amazeballs</description>
     </item>
     
     <item>

@@ -15,5 +15,27 @@ title: davids wed2
 <!--more-->
 <div id="hello-world" class="section level2">
 <h2>Hello World</h2>
+<pre class="r"><code>n = 1000
+x &lt;-rnorm(n,mean=0,sd=1)
+plot(x,main=&#39;random draws from \n a standard normal&#39;) ## Here are all the randomly sampled points </code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)                              ## A histogram of the samples
+curve(dnorm(x,mean=0,sd=1),add=TRUE)                  ## Overlay the pdf to convince ourselves that the points were </code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code>                                                      ## infact drawn from that distribution.
+# Beta
+x&lt;-rbeta(n,7,2)
+plot(x,main=&#39;random draws \n from a beta distribution&#39;)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)
+curve(dbeta(x,7,2),add=TRUE)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-4.png" width="672" /></p>
+<pre class="r"><code># Log-Normal
+x&lt;-rlnorm(n,0,1)
+plot(x,main=&#39;random draws \n from a log-Normal distribution&#39;)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-5.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)
+curve(dlnorm(x,0,1),add=TRUE)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-6.png" width="672" /></p>
 <p>The leftovers finale was amazeballs</p>
 </div>

@@ -15,4 +15,26 @@ This is my new note today
 
 ## Hello World
 
+```{r}
+n = 1000
+x <-rnorm(n,mean=0,sd=1)
+plot(x,main='random draws from \n a standard normal') ## Here are all the randomly sampled points 
+hist(x,probability=TRUE)                              ## A histogram of the samples
+curve(dnorm(x,mean=0,sd=1),add=TRUE)                  ## Overlay the pdf to convince ourselves that the points were 
+                                                      ## infact drawn from that distribution.
+# Beta
+x<-rbeta(n,7,2)
+plot(x,main='random draws \n from a beta distribution')
+hist(x,probability=TRUE)
+curve(dbeta(x,7,2),add=TRUE)
+
+# Log-Normal
+x<-rlnorm(n,0,1)
+plot(x,main='random draws \n from a log-Normal distribution')
+hist(x,probability=TRUE)
+curve(dlnorm(x,0,1),add=TRUE)
+
+```
+
+
 The leftovers finale was amazeballs

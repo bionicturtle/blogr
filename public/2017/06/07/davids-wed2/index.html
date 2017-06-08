@@ -22,8 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="davids wed2" />
 <meta property="og:description" content="This is my new note today
-Hello WorldThe leftovers finale was amazeballs
-" />
+Hello Worldn = 1000x &lt;-rnorm(n,mean=0,sd=1)plot(x,main=&#39;random draws from \n a standard normal&#39;) ## Here are all the randomly sampled points hist(x,probability=TRUE) ## A histogram of the samplescurve(dnorm(x,mean=0,sd=1),add=TRUE) ## Overlay the pdf to convince ourselves that the points were  ## infact drawn from that distribution.# Betax&lt;-rbeta(n,7,2)plot(x,main=&#39;random draws \n from a beta distribution&#39;)hist(x,probability=TRUE)curve(dbeta(x,7,2),add=TRUE)# Log-Normalx&lt;-rlnorm(n,0,1)plot(x,main=&#39;random draws \n from a log-Normal distribution&#39;)hist(x,probability=TRUE)curve(dlnorm(x,0,1),add=TRUE)The leftovers finale was amazeballs" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/2017/06/07/davids-wed2/" />
 
@@ -46,12 +45,11 @@
     
 <meta itemprop="name" content="davids wed2">
 <meta itemprop="description" content="This is my new note today
-Hello WorldThe leftovers finale was amazeballs
-">
+Hello Worldn = 1000x &lt;-rnorm(n,mean=0,sd=1)plot(x,main=&#39;random draws from \n a standard normal&#39;) ## Here are all the randomly sampled points hist(x,probability=TRUE) ## A histogram of the samplescurve(dnorm(x,mean=0,sd=1),add=TRUE) ## Overlay the pdf to convince ourselves that the points were  ## infact drawn from that distribution.# Betax&lt;-rbeta(n,7,2)plot(x,main=&#39;random draws \n from a beta distribution&#39;)hist(x,probability=TRUE)curve(dbeta(x,7,2),add=TRUE)# Log-Normalx&lt;-rlnorm(n,0,1)plot(x,main=&#39;random draws \n from a log-Normal distribution&#39;)hist(x,probability=TRUE)curve(dlnorm(x,0,1),add=TRUE)The leftovers finale was amazeballs">
 
 
 <meta itemprop="dateModified" content="2017-06-07T17:31:14-07:00" />
-<meta itemprop="wordCount" content="13">
+<meta itemprop="wordCount" content="82">
 
 
 
@@ -66,8 +64,7 @@
 <meta name="twitter:text:title" content="davids wed2"/>
 <meta name="twitter:title" content="davids wed2"/>
 <meta name="twitter:description" content="This is my new note today
-Hello WorldThe leftovers finale was amazeballs
-"/>
+Hello Worldn = 1000x &lt;-rnorm(n,mean=0,sd=1)plot(x,main=&#39;random draws from \n a standard normal&#39;) ## Here are all the randomly sampled points hist(x,probability=TRUE) ## A histogram of the samplescurve(dnorm(x,mean=0,sd=1),add=TRUE) ## Overlay the pdf to convince ourselves that the points were  ## infact drawn from that distribution.# Betax&lt;-rbeta(n,7,2)plot(x,main=&#39;random draws \n from a beta distribution&#39;)hist(x,probability=TRUE)curve(dbeta(x,7,2),add=TRUE)# Log-Normalx&lt;-rlnorm(n,0,1)plot(x,main=&#39;random draws \n from a log-Normal distribution&#39;)hist(x,probability=TRUE)curve(dlnorm(x,0,1),add=TRUE)The leftovers finale was amazeballs"/>
 <meta name="twitter:site" content="@spf13"/>
 
     
@@ -301,7 +298,7 @@
             <i class="fa fa-calendar"></i>
             <time datetime="2017-06-07 17:31:14 -0700 PDT" itemprop="datePublished">2017-06-07</time>
             &middot;
-            13
+            82
             words
             &middot;
             1
@@ -325,6 +322,28 @@
 <!--more-->
 <div id="hello-world" class="section level2">
 <h2>Hello World</h2>
+<pre class="r"><code>n = 1000
+x &lt;-rnorm(n,mean=0,sd=1)
+plot(x,main=&#39;random draws from \n a standard normal&#39;) ## Here are all the randomly sampled points </code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)                              ## A histogram of the samples
+curve(dnorm(x,mean=0,sd=1),add=TRUE)                  ## Overlay the pdf to convince ourselves that the points were </code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
+<pre class="r"><code>                                                      ## infact drawn from that distribution.
+# Beta
+x&lt;-rbeta(n,7,2)
+plot(x,main=&#39;random draws \n from a beta distribution&#39;)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)
+curve(dbeta(x,7,2),add=TRUE)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-4.png" width="672" /></p>
+<pre class="r"><code># Log-Normal
+x&lt;-rlnorm(n,0,1)
+plot(x,main=&#39;random draws \n from a log-Normal distribution&#39;)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-5.png" width="672" /></p>
+<pre class="r"><code>hist(x,probability=TRUE)
+curve(dlnorm(x,0,1),add=TRUE)</code></pre>
+<p><img src="/post/davids-wed2_files/figure-html/unnamed-chunk-1-6.png" width="672" /></p>
 <p>The leftovers finale was amazeballs</p>
 </div>
 
