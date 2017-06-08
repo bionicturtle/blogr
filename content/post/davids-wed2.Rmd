@@ -1,0 +1,18 @@
+---
+banner: ""
+categories: []
+date: 2017-06-07T17:31:14-07:00
+description: ""
+images: []
+menu: ""
+tags: []
+title: davids wed2
+---
+
+This is my new note today
+
+<!--more-->
+
+## Hello World
+
+The leftovers finale was amazeballs

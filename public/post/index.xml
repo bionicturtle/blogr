@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice).</copyright>
-    <lastBuildDate>Sat, 20 May 2017 12:10:51 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jun 2017 17:31:14 -0700</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>davids wed2</title>
+      <link>/2017/06/07/davids-wed2/</link>
+      <pubDate>Wed, 07 Jun 2017 17:31:14 -0700</pubDate>
+      
+      <guid>/2017/06/07/davids-wed2/</guid>
+      <description>This is my new note today
+Hello WorldThe leftovers finale was amazeballs
+</description>
+    </item>
     
     <item>
       <title>Markdown Cheat Sheet</title>
@@ -55,6 +66,18 @@
       <guid>/2015/10/02/how-to-add-pages-to-the-menu/</guid>
       <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
 menu = &amp;quot;main&amp;quot;  </description>
+    </item>
+    
+    <item>
+      <title>R Notebook</title>
+      <link>/1/01/01/r-notebook/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/1/01/01/r-notebook/</guid>
+      <description>This is my R Markdown Notebook. When you execute code within the notebook, the results appear beneath the code.
+Try executing this chunk by clicking the Run button within the chunk or by placing your cursor inside it and pressing Ctrl+Shift+Enter.
+plot(cars)Add a new chunk by clicking the Insert Chunk button on the toolbar or by pressing Ctrl+Alt+I.
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the Preview button or press Ctrl+Shift+K to preview the HTML file).</description>
     </item>
     
   </channel>
