@@ -136,8 +136,7 @@ code {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-  /* background-color: #f8f8f8; */
-  background-color: #ffffff;
+  background-color: #f8f8f8;
 }
 .outer {
   max-width: 1320px;
@@ -2101,8 +2100,7 @@ ol.toc {
 }
 .highlight {
   color: #ddd;
-  /* background: #272822; */
-  background: #FFFFFF;
+  background: #272822;
 }
 .highlight .code .tag,
 .highlight .code .keyword,
