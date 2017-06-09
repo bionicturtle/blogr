@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ämne on Min blog</title>
+    <link>/sv/%C3%A4mne/</link>
+    <description>Recent content in Ämne on Min blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>sv</language>
+    <managingEditor>yourname@example.com (yourname)</managingEditor>
+    <webMaster>yourname@example.com (yourname)</webMaster>
+    <copyright>(c) 2016 Alla rättigheter</copyright>
+    
+	<atom:link href="/sv/%C3%A4mne/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ämne 1</title>
+      <link>/sv/%C3%A4mne/%C3%A4mne-1/</link>
+      <pubDate>Mon, 05 Dec 2016 12:29:19 +0100</pubDate>
+      <author>yourname@example.com (yourname)</author>
+      <guid>/sv/%C3%A4mne/%C3%A4mne-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

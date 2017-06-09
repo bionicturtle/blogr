@@ -19,7 +19,9 @@ library(ggplot2)
 quandl_api <- "G5xW3q6kgbALQ8L2srWD"
 Quandl.api_key(quandl_api)
 mydata = Quandl.datatable("WIKI/PRICES", ticker="AAPL")
-ggplot(mydata, aes(x=date, y=close)) + geom_line()
+# ggplot(mydata, aes(x=date, y=close)) + geom_line()
+
+plot(mydata$date, mydata$close)
 
 ```
 

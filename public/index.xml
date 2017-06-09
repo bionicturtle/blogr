@@ -67,7 +67,7 @@ I am a teaching instructor for the following courses at University X:
       
       <guid>/2017/06/08/lets-get-quandl/</guid>
       <description>lets’ see if we can grab some quandle data
-## install.packages(&amp;quot;Quandl&amp;quot;)library(Quandl)## Warning: package &amp;#39;Quandl&amp;#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &amp;lt;- &amp;quot;G5xW3q6kgbALQ8L2srWD&amp;quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&amp;quot;WIKI/PRICES&amp;quot;, ticker=&amp;quot;AAPL&amp;quot;)ggplot(mydata, aes(x=date, y=close)) + geom_line()</description>
+## install.packages(&amp;quot;Quandl&amp;quot;)library(Quandl)## Warning: package &amp;#39;Quandl&amp;#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &amp;lt;- &amp;quot;G5xW3q6kgbALQ8L2srWD&amp;quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&amp;quot;WIKI/PRICES&amp;quot;, ticker=&amp;quot;AAPL&amp;quot;)# ggplot(mydata, aes(x=date, y=close)) + geom_line()plot(mydata$date, mydata$close)</description>
     </item>
     
     <item>
@@ -135,6 +135,33 @@ x &amp;lt;- rnorm(100)x## [1] -0.879113238 -0.766520440 0.760927108 -0.0066344
     </item>
     
     <item>
+      <title></title>
+      <link>/showcase/</link>
+      <pubDate>Mon, 05 Dec 2016 14:41:00 +0100</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>Showcase Showcase text in english.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/showcase.sv/</link>
+      <pubDate>Mon, 05 Dec 2016 14:41:00 +0100</pubDate>
+      
+      <guid>/showcase.sv/</guid>
+      <description>Exempel Exempel text på svenska för Showcase.</description>
+    </item>
+    
+    <item>
+      <title>Introduktion</title>
+      <link>/2016/12/05/introduktion/</link>
+      <pubDate>Mon, 05 Dec 2016 12:29:19 +0100</pubDate>
+      
+      <guid>/2016/12/05/introduktion/</guid>
+      <description>En rubrik Text om ämnet ett.</description>
+    </item>
+    
+    <item>
       <title>About</title>
       <link>/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
@@ -159,6 +186,27 @@ x &amp;lt;- rnorm(100)x## [1] -0.879113238 -0.766520440 0.760927108 -0.0066344
       
       <guid>/project/example-external-project/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>What is Hugo?</title>
+      <link>/2016/04/24/what-is-hugo/</link>
+      <pubDate>Sun, 24 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>/2016/04/24/what-is-hugo/</guid>
+      <description>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure.</description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/2016/04/21/introduction/</link>
+      <pubDate>Thu, 21 Apr 2016 02:50:28 +0200</pubDate>
+      
+      <guid>/2016/04/21/introduction/</guid>
+      <description>Hugo is written in Go with support for multiple platforms.
+The latest release can be found at Hugo Releases. We currently provide pre-built binaries for &amp;nbsp;Windows, &amp;nbsp;Linux, &amp;nbsp;FreeBSD and &amp;nbsp;OS&amp;nbsp;X (Darwin) for x64, i386 and ARM architectures.
+Hugo may also be compiled from source wherever the Go compiler tool chain can run, e.g. for other operating systems including DragonFly BSD, OpenBSD, Plan&amp;nbsp;9 and Solaris. See http://golang.org/doc/install/source for the full set of supported combinations of target operating systems and compilation architectures.</description>
     </item>
     
     <item>

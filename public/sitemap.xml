@@ -83,6 +83,21 @@
   </url>
   
   <url>
+    <loc>/showcase/</loc>
+    <lastmod>2016-12-05T14:41:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/showcase.sv/</loc>
+    <lastmod>2016-12-05T14:41:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/12/05/introduktion/</loc>
+    <lastmod>2016-12-05T12:29:19+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2016-05-05T21:48:51-07:00</lastmod>
   </url>
@@ -95,6 +110,16 @@
   <url>
     <loc>/project/example-external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/04/24/what-is-hugo/</loc>
+    <lastmod>2016-04-24T02:50:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/2016/04/21/introduction/</loc>
+    <lastmod>2016-04-21T02:50:28+02:00</lastmod>
   </url>
   
   <url>

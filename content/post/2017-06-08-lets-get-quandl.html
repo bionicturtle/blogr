@@ -28,6 +28,8 @@ library(Quandl)</code></pre>
 quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;
 Quandl.api_key(quandl_api)
 mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)
-ggplot(mydata, aes(x=date, y=close)) + geom_line()</code></pre>
+# ggplot(mydata, aes(x=date, y=close)) + geom_line()
+
+plot(mydata$date, mydata$close)</code></pre>
 <p><img src="/post/2017-06-08-lets-get-quandl_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <!--more-->

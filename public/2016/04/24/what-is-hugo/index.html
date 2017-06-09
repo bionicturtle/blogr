@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>What is Hugo? &middot; Icarus</title>
+    <meta name="generator" content="Hugo 0.21" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="David Harper">
+    
+      <meta name="description" content="">
+    
+    
+    <link rel="canonical" href="/2016/04/24/what-is-hugo/"/>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/monokai.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="What is Hugo?" />
+<meta property="og:description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2016/04/24/what-is-hugo/" />
+
+
+
+<meta property="article:published_time" content="2016-04-24T02:50:28&#43;02:00"/>
+<meta property="article:modified_time" content="2016-04-24T02:50:28&#43;02:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="What is Hugo?">
+<meta itemprop="description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure.">
+
+
+<meta itemprop="dateModified" content="2016-04-24T02:50:28&#43;02:00" />
+<meta itemprop="wordCount" content="1034">
+
+
+
+<meta itemprop="keywords" content="programming,deep-learning,demo,golang,hugo,markdown,programming,theme," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content="What is Hugo?"/>
+<meta name="twitter:title" content="What is Hugo?"/>
+<meta name="twitter:description" content="Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike other systems which dynamically build a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+Sites built with Hugo are extremely fast and very secure."/>
+<meta name="twitter:site" content="@spf13"/>
+
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+<div id="container">
+	<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+      <a href="/" id="logo">
+          
+          <i class="logo" style="background-image: url('/css/images/logo.jpg')"></i>
+          
+          <span class="site-title">Icarus</span>
+      </a>
+      <nav id="main-nav">
+          
+          
+          <a class="main-nav-link" href="/">Home</a>
+          
+          
+          
+          
+          
+          
+
+          
+          <a class="main-nav-link" href="/showcase.sv/">Exempel</a>
+          
+          <a class="main-nav-link" href="/showcase/">Showcase</a>
+          
+          <a class="main-nav-link" href="/about/">About</a>
+          
+          <a class="main-nav-link" href="/2015/10/02/how-to-add-pages-to-the-menu/">How to add pages to the menu</a>
+          
+          <a class="main-nav-link" href="/2017/05/20/using-the-gallery-shortcode/">Using the gallery shortcode</a>
+          
+
+          
+          
+          
+          
+          <a class="main-nav-link" href="/tags/">Tags</a>
+          
+          
+          
+          <a class="main-nav-link" href="/categories/">Categories</a>
+          
+          
+      </nav>
+        <nav id="sub-nav">
+          <div class="profile" id="profile-nav">
+            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="/css/images/avatar.jpg"><i class="fa fa-caret-down"></i></a>
+          </div>
+        </nav>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+              <input type="search" name="q" class="search-form-input" placeholder="Search">
+              <button type="submit" class="search-form-submit">
+              </button>
+              <input type="hidden" name="sitesearch" value="/" />
+         </form>
+        </div>
+    </div>
+  </div>
+  <div id="main-nav-mobile" class="header-sub header-inner">
+    <table class="menu outer">
+      <tbody>
+          <tr>
+          
+          
+          <td><a class="main-nav-link" href="/">Home</a></td>
+          
+          
+          
+          
+          
+          
+
+          
+          <td><a class="main-nav-link" href="/showcase.sv/">Exempel</a></td>
+          
+          <td><a class="main-nav-link" href="/showcase/">Showcase</a></td>
+          
+          <td><a class="main-nav-link" href="/about/">About</a></td>
+          
+          <td><a class="main-nav-link" href="/2015/10/02/how-to-add-pages-to-the-menu/">How to add pages to the menu</a></td>
+          
+          <td><a class="main-nav-link" href="/2017/05/20/using-the-gallery-shortcode/">Using the gallery shortcode</a></td>
+          
+
+          
+          
+          
+          
+          <td><a class="main-nav-link" href="/tags/">Tags</a></td>
+          
+          
+          
+          <td><a class="main-nav-link" href="/categories/">Categories</a></td>
+          
+          
+          <td>
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
+          <input type="search" name="q" class="search-form-input" placeholder="Search">
+          <input type="hidden" name="sitesearch" value="/" />
+          </form>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</header>
+
+   	
+   	<div class="outer">
+   	
+    	<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      
+      <img id="avatar" src="/css/images/avatar.jpg">
+      
+      <h2 id="name">David Harper</h2>
+      <h3 id="title">Expert Finance at bionicturtle.com - Data Science</h3>
+      <span id="location"><i class="fa fa-map-marker"></i>Earth</span>
+      
+          <a id="follow" href="https://github.com/digitalcraftsman">
+              Follow
+          </a>
+      
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        11
+        <span>Posts</span>
+      </div>
+      <div class="article-info-block">
+        
+          7
+        
+        <span>
+            Tags
+        </span>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          
+<td><a href="//github.com/bionicturtle" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<td><a href="//twitter.com/spf13" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
+
+
+          <td><a href="/index.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>
+
+    
+
+    <section id="main">
+    
+    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+
+        <header class="article-header">
+    <a href="/2016/04/24/what-is-hugo/">
+    <h1 class="article-title" itemprop="name">
+        What is Hugo?
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2016-04-24 02:50:28 &#43;0200 &#43;0200" itemprop="datePublished">2016-04-24</time>
+            &middot;
+            1034
+            words
+            &middot;
+            5
+            minute read
+        </div>
+        
+        
+
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            
+
+<p>Hugo is a general-purpose website framework. Technically speaking, Hugo is
+a static site generator. Unlike other systems which dynamically build a page
+every time a visitor requests one, Hugo does the building when you create
+your content. Since websites are viewed far more often than they are
+edited, Hugo is optimized for website viewing while providing a great
+writing experience.</p>
+
+<p>Sites built with Hugo are extremely fast and very secure. Hugo sites can
+be hosted anywhere, including <a href="https://appernetic.io/">Appernetic</a>, <a href="https://www.heroku.com/">Heroku</a>, <a href="https://www.godaddy.com/">GoDaddy</a>, <a href="http://www.dreamhost.com/">DreamHost</a>,
+<a href="https://pages.github.com/">GitHub Pages</a>, <a href="https://surge.sh">Surge</a>, <a href="https://www.aerobatic.com/">Aerobatic</a>, <a href="http://cloud.google.com/storage/">Google Cloud Storage</a>,
+<a href="http://aws.amazon.com/s3/">Amazon S3</a> and <a href="http://aws.amazon.com/cloudfront/" title="Amazon CloudFront">CloudFront</a>, and work well with CDNs.
+Hugo sites run without dependencies on expensive runtimes like Ruby,
+Python or PHP and without dependencies on any databases.</p>
+
+<p>We think of Hugo as the ideal website creation tool. With nearly instant
+build times and the ability to rebuild whenever a change is made, Hugo
+provides a very fast feedback loop. This is essential when you are
+designing websites, but also very useful when creating content.</p>
+
+<h2 id="what-makes-hugo-different">What makes Hugo different?</h2>
+
+<p>Web site generators render content into HTML files. Most are &ldquo;dynamic
+site generators.&rdquo; That means the HTTP
+server (which is the program running on your website that the user&rsquo;s
+browser talks to) runs the generator to create a new HTML file
+each and every time a user wants to view a page.</p>
+
+<p>Creating the page dynamically means that the computer hosting
+the HTTP server has to have enough memory and CPU to effectively run
+the generator around the clock. If not, then the user has to wait
+in a queue for the page to be generated.</p>
+
+<p>Nobody wants users to wait longer than needed, so the dynamic site
+generators programmed their systems to cache the HTML files. When
+a file is cached, a copy of it is temporarily stored on the computer.
+It is much faster for the HTTP server to send that copy the next time
+the page is requested than it is to generate it from scratch.</p>
+
+<p>Hugo takes caching a step further. All HTML files are rendered on your
+computer. You can review the files before you copy them to the computer
+hosting the HTTP server. Since the HTML files aren&rsquo;t generated dynamically,
+we say that Hugo is a &ldquo;static site generator.&rdquo;</p>
+
+<p>Not running a web site generator on your HTTP server has many benefits.
+The most noticeable is performance - HTTP servers are very good at
+sending files. So good that you can effectively serve the same number
+of pages with a fraction of the memory and CPU needed for a dynamic site.</p>
+
+<p>Hugo has two components to help you build and test your web site. The
+one that you&rsquo;ll probably use most often is the built-in HTTP server.
+When you run <code>hugo server</code>, Hugo renders all of your content into
+HTML files and then runs an HTTP server on your computer so that you
+can see what the pages look like.</p>
+
+<p>The second component is used when you&rsquo;re ready to publish your web
+site to the computer running your website. Running Hugo without any
+actions will rebuild your entire web site using the <code>baseurl</code> setting
+from your site&rsquo;s configuration file. That&rsquo;s required to have your page
+links work properly with most hosting companies.</p>
+
+<h2 id="how-fast-is-hugo">How fast is Hugo?</h2>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/CdiDYZ51a2o" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
+
+<h2 id="what-does-hugo-do">What does Hugo do?</h2>
+
+<p>In technical terms, Hugo takes a source directory of files and
+templates and uses these as input to create a complete website.</p>
+
+<p>Hugo boasts the following features:</p>
+
+<h3 id="general">General</h3>
+
+<ul>
+<li>Extremely fast build times (~1 ms per page)</li>
+<li>Completely cross platform: Runs on <i class="fa fa-apple"></i>&nbsp;Mac OS&nbsp;X, <i class="fa fa-linux"></i>&nbsp;Linux, <i class="fa fa-windows"></i>&nbsp;Windows, and more!</li>
+<li>Easy <a href="/overview/installing/">installation</a></li>
+<li>Render changes <a href="/overview/usage/">on the fly</a> with <a href="/extras/livereload/">LiveReload</a> as you develop</li>
+<li>Complete theme support</li>
+<li>Host your site anywhere</li>
+</ul>
+
+<h3 id="organization">Organization</h3>
+
+<ul>
+<li>Straightforward <a href="/content/organization/">organization</a></li>
+<li>Support for <a href="/content/sections/">website sections</a></li>
+<li>Completely customizable <a href="/extras/urls/">URLs</a></li>
+<li>Support for configurable <a href="/taxonomies/overview/">taxonomies</a> which includes categories and tags.  Create your own custom organization of content</li>
+<li>Ability to <a href="/content/ordering/">sort content</a> as you desire</li>
+<li>Automatic <a href="/extras/toc/">table of contents</a> generation</li>
+<li>Dynamic menu creation</li>
+<li><a href="/extras/urls/">Pretty URLs</a> support</li>
+<li><a href="/extras/permalinks/">Permalink</a> pattern support</li>
+<li><a href="/extras/aliases/">Aliases</a> (redirects)</li>
+</ul>
+
+<h3 id="content">Content</h3>
+
+<ul>
+<li>Native support for content written in <a href="/content/example/">Markdown</a>
+
+<ul>
+<li>Support for other languages through <em>external helpers</em>, see <a href="/content/supported-formats">supported formats</a></li>
+</ul></li>
+<li>Support for TOML, YAML and JSON metadata in <a href="/content/front-matter/">frontmatter</a></li>
+<li>Completely <a href="/layout/homepage/">customizable homepage</a></li>
+<li>Support for multiple <a href="/content/types/">content types</a></li>
+<li>Automatic and user defined <a href="/content/summaries/">summaries</a></li>
+<li><a href="/extras/shortcodes/">Shortcodes</a> to enable rich content inside of Markdown</li>
+<li><a href="/layout/variables/">&ldquo;Minutes to Read&rdquo;</a> functionality</li>
+<li><a href="/layout/variables/">&ldquo;Wordcount&rdquo;</a> functionality</li>
+</ul>
+
+<h3 id="additional-features">Additional Features</h3>
+
+<ul>
+<li>Integrated <a href="https://disqus.com/">Disqus</a> comment support</li>
+<li>Integrated <a href="https://google-analytics.com/">Google Analytics</a> support</li>
+<li>Automatic <a href="/layout/rss/">RSS</a> creation</li>
+<li>Support for <a href="http://golang.org/pkg/html/template/">Go</a>, <a href="https://github.com/eknkc/amber">Amber</a> and <a href="http://ace.yoss.si/">Ace</a> HTML templates</li>
+<li>Syntax <a href="/extras/highlighting/">highlighting</a> powered by <a href="http://pygments.org/">Pygments</a></li>
+</ul>
+
+<p>See what&rsquo;s coming next in the <a href="/meta/roadmap/">roadmap</a>.</p>
+
+<h2 id="who-should-use-hugo">Who should use Hugo?</h2>
+
+<p>Hugo is for people that prefer writing in a text editor over
+a browser.</p>
+
+<p>Hugo is for people who want to hand code their own website without
+worrying about setting up complicated runtimes, dependencies and
+databases.</p>
+
+<p>Hugo is for people building a blog, company site, portfolio, tumblog,
+documentation, single page site or a site with thousands of
+pages.</p>
+
+<h2 id="why-did-you-write-hugo">Why did you write Hugo?</h2>
+
+<p>I wrote Hugo ultimately for a few reasons. First, I was disappointed with
+WordPress, my then website solution. It rendered slowly. I couldn&rsquo;t create
+content as efficiently as I wanted to and needed to be online to write
+posts. The constant security updates and the horror stories of people&rsquo;s
+hacked blogs. I hated how content was written in HTML instead of the much
+simpler Markdown. Overall, I felt like it got in my way more than it helped
+me from writing great content.</p>
+
+<p>I looked at existing static site generators like <a href="http://jekyllrb.com/">Jekyll</a>, <a href="https://middlemanapp.com/">Middleman</a> and <a href="http://nanoc.ws/">nanoc</a>.
+All had complicated dependencies to install and took far longer to render
+my blog with hundreds of posts than I felt was acceptable. I wanted
+a framework to be able to get rapid feedback while making changes to the
+templates, and the 5+-minute render times was just too slow. In general,
+they were also very blog minded and didn&rsquo;t have the ability to have
+different content types and flexible URLs.</p>
+
+<p>I wanted to develop a fast and full-featured website framework without
+dependencies. The <a href="http://golang.org/" title="The Go Programming Language">Go language</a> seemed to have all of the features I needed
+in a language. I began developing Hugo in Go and fell in love with the
+language. I hope you will enjoy using (and contributing to) Hugo as much
+as I have writing it.</p>
+
+        </div>
+        <footer class="article-footer">
+    <a data-url="/2016/04/24/what-is-hugo/" data-id="d337f980a229e3915a9ec3457b0036c2" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+
+    
+<nav id="article-nav">
+    
+    <a href="/2016/04/21/introduction/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Older
+      </strong>
+      <div class="article-nav-title">Introduction</div>
+    </a>
+    
+
+    
+    <a href="/2016/12/05/introduktion/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">
+          Newer
+      </strong>
+      <div class="article-nav-title">Introduktion</div>
+    </a>
+    
+</nav>
+
+
+</article>
+
+
+
+    </section>
+
+   	
+    	<aside id="sidebar">
+    
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Recents
+    </h3>
+    <div class="widget">
+        <ul id="recent-post">
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/06/08/lets-get-quandl/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/06/08/lets-get-quandl/" class="title">lets-get-quandl</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/06/08/post-thursdays-thought/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/06/08/post-thursdays-thought/" class="title">post/thursdays-thought</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/06/07/davids-wed2/" class="thumbnail">
+                    
+                        <span style="background-image:url(/banners/0508-options.jpg)" alt="What is Hugo?" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/06/07/davids-wed2/" class="title">davids wed2</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-07 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-07</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/05/20/markdown-cheat-sheet/" class="thumbnail">
+                    
+                        <span style="background-image:url(/banners/0521-correlations.jpeg)" alt="What is Hugo?" class="thumbnail-image"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/05/20/markdown-cheat-sheet/" class="title">Markdown Cheat Sheet</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 12:10:51 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
+                    <a href="/2017/05/20/using-the-gallery-shortcode/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/05/20/using-the-gallery-shortcode/" class="title">Using the gallery shortcode</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-05-20 12:00:23 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
+                    </p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/categories/programming">
+                    programming
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tags
+    </h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/deep-learning">
+                    deep-learning
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/demo">
+                    demo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/golang">
+                    golang
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/hugo">
+                    hugo
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/markdown">
+                    markdown
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/programming">
+                    programming
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="/tags/theme">
+                    theme
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+
+    
+
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+        Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        
+        <a href="/tags/deep-learning" style="font-size: 12px;">deep-learning</a>
+        
+        
+        <a href="/tags/demo" style="font-size: 12px;">demo</a>
+        
+        
+        <a href="/tags/golang" style="font-size: 12px;">golang</a>
+        
+        
+        <a href="/tags/hugo" style="font-size: 12px;">hugo</a>
+        
+        
+        <a href="/tags/markdown" style="font-size: 12px;">markdown</a>
+        
+        
+        <a href="/tags/programming" style="font-size: 12px;">programming</a>
+        
+        
+        <a href="/tags/theme" style="font-size: 12px;">theme</a>
+        
+    </div>
+</div>
+
+
+
+
+
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+
+    
+	</div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017
+      Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="http://github.com/ppoffice">PPOffice</a>.
+    </div>
+  </div>
+</footer>
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+</body>
+</html>
