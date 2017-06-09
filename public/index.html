@@ -180,7 +180,7 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        7
+        8
         <span>Posts</span>
       </div>
       <div class="article-info-block">
@@ -263,6 +263,130 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="/2017/06/08/lets-get-quandl/">
+    <h1 class="article-title" itemprop="name">
+        lets-get-quandl
+    </h1>
+    </a>
+    <div class="article-meta">
+
+        
+        <div class="article-date">
+            <i class="fa fa-calendar"></i>
+            <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+            &middot;
+            63
+            words
+            &middot;
+            1
+            minute read
+        </div>
+        
+        
+            
+            
+        
+
+        
+            
+            
+        
+    </div>
+</header>
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                lets’ see if we can grab some quandle data
+## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)ggplot(mydata, aes(x=date, y=close)) + geom_line()
+            </p>
+            <p class="article-more-link">
+                <a href="/2017/06/08/lets-get-quandl/">
+                    Read more
+                </a>
+            </p>
+        </div>
+        <footer class="article-footer">
+    <a data-url="/2017/06/08/lets-get-quandl/" data-id="525bd01b5791b7255cc168ee71e94cab" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -1201,6 +1325,25 @@ When you save the notebook, an HTML file containing the code and output will be 
             
             <li>
                 <div class="item-thumbnail">
+                    <a href="/2017/06/08/lets-get-quandl/" class="thumbnail">
+                    
+                        <span class="thumbnail-image thumbnail-none"></span>
+                    
+                    </a>
+                </div>
+                <div class="item-inner">
+                    
+                    
+                    
+                    <p class="item-title"><a href="/2017/06/08/lets-get-quandl/" class="title">lets-get-quandl</a></p>
+                    <p class="item-date">
+                        <time datetime="2017-06-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">2017-06-08</time>
+                    </p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="item-thumbnail">
                     <a href="/2017/06/08/post-thursdays-thought/" class="thumbnail">
                     
                         <span class="thumbnail-image thumbnail-none"></span>
@@ -1271,25 +1414,6 @@ When you save the notebook, an HTML file containing the code and output will be 
                     <p class="item-title"><a href="/2017/05/20/using-the-gallery-shortcode/" class="title">Using the gallery shortcode</a></p>
                     <p class="item-date">
                         <time datetime="2017-05-20 12:00:23 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="/2017/05/20/formulas-with-mathjax/" class="thumbnail">
-                    
-                        <span class="thumbnail-image thumbnail-none"></span>
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    
-                    
-                    <p class="item-title"><a href="/2017/05/20/formulas-with-mathjax/" class="title">Formulas with MathJax</a></p>
-                    <p class="item-date">
-                        <time datetime="2017-05-20 11:58:06 &#43;0200 &#43;0200" itemprop="datePublished">2017-05-20</time>
                     </p>
                 </div>
             </li>

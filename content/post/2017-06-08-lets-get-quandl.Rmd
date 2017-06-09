@@ -1,0 +1,27 @@
+---
+title: lets-get-quandl
+author: ~
+date: '2017-06-08'
+slug: lets-get-quandl
+categories: []
+tags: []
+banner: ''
+description: ''
+images: []
+menu: ''
+---
+
+lets' see if we can grab some quandle data
+```{r}
+## install.packages("Quandl")
+library(Quandl)
+library(ggplot2)
+quandl_api <- "G5xW3q6kgbALQ8L2srWD"
+Quandl.api_key(quandl_api)
+mydata = Quandl.datatable("WIKI/PRICES", ticker="AAPL")
+ggplot(mydata, aes(x=date, y=close)) + geom_line()
+
+```
+
+
+<!--more-->

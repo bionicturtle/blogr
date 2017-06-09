@@ -1,0 +1,33 @@
+---
+title: lets-get-quandl
+author: ~
+date: '2017-06-08'
+slug: lets-get-quandl
+categories: []
+tags: []
+banner: ''
+description: ''
+images: []
+menu: ''
+---
+
+
+
+<p>lets’ see if we can grab some quandle data</p>
+<pre class="r"><code>## install.packages(&quot;Quandl&quot;)
+library(Quandl)</code></pre>
+<pre><code>## Warning: package &#39;Quandl&#39; was built under R version 3.3.3</code></pre>
+<pre><code>## Loading required package: xts</code></pre>
+<pre><code>## Loading required package: zoo</code></pre>
+<pre><code>## 
+## Attaching package: &#39;zoo&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     as.Date, as.Date.numeric</code></pre>
+<pre class="r"><code>library(ggplot2)
+quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;
+Quandl.api_key(quandl_api)
+mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)
+ggplot(mydata, aes(x=date, y=close)) + geom_line()</code></pre>
+<p><img src="/post/2017-06-08-lets-get-quandl_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<!--more-->
