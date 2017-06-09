@@ -22,7 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
     <meta property="og:title" content="lets-get-quandl" />
 <meta property="og:description" content="lets’ see if we can grab some quandle data
-## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)# ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()plot(mydata$date, mydata$close)" />
+## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()# plot(mydata$date, mydata$close)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/2017/06/08/lets-get-quandl/" />
 
@@ -45,7 +45,7 @@
     
 <meta itemprop="name" content="lets-get-quandl">
 <meta itemprop="description" content="lets’ see if we can grab some quandle data
-## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)# ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()plot(mydata$date, mydata$close)">
+## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()# plot(mydata$date, mydata$close)">
 
 
 <meta itemprop="dateModified" content="2017-06-08T00:00:00&#43;00:00" />
@@ -64,7 +64,7 @@
 <meta name="twitter:text:title" content="lets-get-quandl"/>
 <meta name="twitter:title" content="lets-get-quandl"/>
 <meta name="twitter:description" content="lets’ see if we can grab some quandle data
-## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)# ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()plot(mydata$date, mydata$close)"/>
+## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)ggplot(mydata, aes(x=date, y=close)) &#43; geom_line()# plot(mydata$date, mydata$close)"/>
 <meta name="twitter:site" content="@spf13"/>
 
     
@@ -341,10 +341,9 @@ library(Quandl)</code></pre>
 quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;
 Quandl.api_key(quandl_api)
 mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)
-# ggplot(mydata, aes(x=date, y=close)) + geom_line()
-
-plot(mydata$date, mydata$close)</code></pre>
+ggplot(mydata, aes(x=date, y=close)) + geom_line()</code></pre>
 <p><img src="/post/2017-06-08-lets-get-quandl_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<pre class="r"><code># plot(mydata$date, mydata$close)</code></pre>
 <!--more-->
 
         </div>

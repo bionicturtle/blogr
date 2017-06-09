@@ -67,7 +67,7 @@ I am a teaching instructor for the following courses at University X:
       
       <guid>/2017/06/08/lets-get-quandl/</guid>
       <description>lets’ see if we can grab some quandle data
-## install.packages(&amp;quot;Quandl&amp;quot;)library(Quandl)## Warning: package &amp;#39;Quandl&amp;#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &amp;lt;- &amp;quot;G5xW3q6kgbALQ8L2srWD&amp;quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&amp;quot;WIKI/PRICES&amp;quot;, ticker=&amp;quot;AAPL&amp;quot;)# ggplot(mydata, aes(x=date, y=close)) + geom_line()plot(mydata$date, mydata$close)</description>
+## install.packages(&amp;quot;Quandl&amp;quot;)library(Quandl)## Warning: package &amp;#39;Quandl&amp;#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &amp;lt;- &amp;quot;G5xW3q6kgbALQ8L2srWD&amp;quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&amp;quot;WIKI/PRICES&amp;quot;, ticker=&amp;quot;AAPL&amp;quot;)ggplot(mydata, aes(x=date, y=close)) + geom_line()# plot(mydata$date, mydata$close)</description>
     </item>
     
     <item>

@@ -312,7 +312,7 @@
         <div class="article-entry" itemprop="articleBody">
             <p>
                 lets’ see if we can grab some quandle data
-## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)# ggplot(mydata, aes(x=date, y=close)) + geom_line()plot(mydata$date, mydata$close)
+## install.packages(&quot;Quandl&quot;)library(Quandl)## Warning: package &#39;Quandl&#39; was built under R version 3.3.3## Loading required package: xts## Loading required package: zoo## ## Attaching package: &#39;zoo&#39;## The following objects are masked from &#39;package:base&#39;:## ## as.Date, as.Date.numericlibrary(ggplot2)quandl_api &lt;- &quot;G5xW3q6kgbALQ8L2srWD&quot;Quandl.api_key(quandl_api)mydata = Quandl.datatable(&quot;WIKI/PRICES&quot;, ticker=&quot;AAPL&quot;)ggplot(mydata, aes(x=date, y=close)) + geom_line()# plot(mydata$date, mydata$close)
             </p>
             <p class="article-more-link">
                 <a href="/2017/06/08/lets-get-quandl/">
